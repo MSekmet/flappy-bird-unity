@@ -1,0 +1,18 @@
+using UnityEngine;
+
+public class PipelineMovement : MonoBehaviour
+{
+    
+    public float speed;
+
+    private void Start()
+    {
+        Destroy(gameObject, 7);
+    }
+    
+    void FixedUpdate()
+    {
+        transform.position += Vector3.left * speed * Time.deltaTime;
+    }
+}
+
